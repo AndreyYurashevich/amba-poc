@@ -1,7 +1,7 @@
 {
   "type": "Microsoft.Authorization/policyDefinitions",
   "apiVersion": "2021-06-01",
-  "name": "f9459789-a6a2-4a93-9ee9-c3f1b0e051fc",
+  "name": "Deploy_VM_MyPercentageCPU_Alert",
   "properties": {
     "policyType": "Custom",
     "mode": "All",
