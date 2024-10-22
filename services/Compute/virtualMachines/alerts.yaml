@@ -442,6 +442,33 @@
       scope: Subscription
       multiResource: false
   guid: 299ce963-728a-48c8-8b7d-e05b5f8a8f38
+- name: My Percentage CPU
+  description: The percentage of allocated compute units that are currently in use
+    by the Virtual Machine(s)
+  type: Metric
+  verified: true
+  visible: true
+  tags: null
+  properties:
+    metricName: Percentage CPU
+    metricNamespace: Microsoft.Compute/virtualMachines
+    severity: 3
+    windowSize: PT5M
+    evaluationFrequency: PT5M
+    timeAggregation: Average
+    operator: GreaterThan
+    criterionType: StaticThresholdCriterion
+    threshold: 80
+  # deployments:
+  # - name: Deploy VM OS Disk Free Space in MB Alert
+  #   template: Deploy-VM-MyPercentageCPU-Alert.json
+  #   type: Policy
+  #   tags:
+  #   - alz
+  #   properties:
+  #     scope: Subscription
+  #     multiResource: false
+  guid: f9459789-a6a2-4a93-9ee9-c3f1b0e051fc
 - name: OS Disk Free Space Percentage
   description: Log Alert for Virtual Machine OS Disk Free Space Percentage
   type: Log

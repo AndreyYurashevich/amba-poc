@@ -2385,6 +2385,50 @@
             "value": "[[parameters('ALZMonitorDisableTagValues')]"
           }
         }
+      },
+      {
+        "policyDefinitionReferenceId": "ALZ_VMMyPercentageCPU",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/Deploy_VM_MyPercentageCPU_Alert",
+        "parameters": {
+          "severity": {
+            "value": "2"
+          },
+          "windowSize": {
+            "value": "PT15M"
+          },
+          "evaluationFrequency": {
+            "value": "PT15M"
+          },
+          "autoMitigate": {
+            "value": "true"
+          },
+          "autoResolve": {
+            "value": "true"
+          },
+          "autoResolveTime": {
+            "value": "00:10:00"
+          },
+          "effect": {
+            "value": "deployIfNotExists"
+          },
+          "enabled": {
+            "value": "true"
+          },
+          "threshold": {
+            "value": "79"
+          },
+          "MonitorDisableTagName": {
+            "value": "MonitorDisable"
+          },
+          "MonitorDisableTagValues": {
+            "value":[
+              "true",
+              "Test",
+              "Dev",
+              "Sandbox"
+            ]
+          }
+        }
       }
     ],
     "policyType": "Custom",
