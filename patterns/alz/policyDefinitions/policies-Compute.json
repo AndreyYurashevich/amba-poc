@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.30.23.60470",
-      "templateHash": "11368248112951930828"
+      "templateHash": "14952484793165309868"
     }
   },
   "parameters": {
@@ -2522,12 +2522,6 @@
               },
               "autoMitigate": {
                 "value": "true"
-              },
-              "autoResolve": {
-                "value": "true"
-              },
-              "autoResolveTime": {
-                "value": "00:10:00"
               },
               "effect": {
                 "value": "deployIfNotExists"
