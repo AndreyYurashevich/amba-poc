@@ -385,7 +385,7 @@
                             "condition": "[[empty(parameters('BYOAlertProcessingRule'))]",
                             "type": "Microsoft.AlertsManagement/actionRules",
                             "apiVersion": "2021-08-08",
-                            "name": "[[concat('apr-AMBA-','test-sub', '-001')]",
+                            "name": "[[concat('apr-AMBA-','test', '-001')]",
                             "location": "Global",
                             "dependsOn": [
                               "[[concat('ag-AMBA-', subscription().displayName, '-001')]"
@@ -400,7 +400,10 @@
                               "description": "AMBA Notification Assets - Alert Processing Rule for Subscription",
                               "enabled": true,
                               "actions": [
-
+                                {
+                                  "actiongroupIds": "/subscriptions/75500D82-7C33-436E-8933-EDB1B9AF3C4D/resourceGroups/rg-amba-monitoring-001/providers/microsoft.insights/actionGroups/ag-manual-001",
+                                  "actionType": "AddActionGroups"
+                                }
                               ]
                             }
                           }
