@@ -385,7 +385,7 @@
                             "condition": "[[empty(parameters('BYOAlertProcessingRule'))]",
                             "type": "Microsoft.AlertsManagement/actionRules",
                             "apiVersion": "2021-08-08",
-                            "name": "[[concat('apr-AMBA-',subscription().displayName, '-001')]",
+                            "name": "[[concat('apr-AMBA-','test-sub', '-001')]",
                             "location": "Global",
                             "dependsOn": [
                               "[[concat('ag-AMBA-', subscription().displayName, '-001')]"
