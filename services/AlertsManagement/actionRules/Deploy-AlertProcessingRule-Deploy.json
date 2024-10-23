@@ -401,7 +401,7 @@
                               "enabled": true,
                               "actions": [
                                 {
-                                  "actiongroupIds": "/subscriptions/75500D82-7C33-436E-8933-EDB1B9AF3C4D/resourceGroups/rg-amba-monitoring-001/providers/microsoft.insights/actionGroups/ag-manual-001",
+                                  "actiongroupIds": ["/subscriptions/75500D82-7C33-436E-8933-EDB1B9AF3C4D/resourceGroups/rg-amba-monitoring-001/providers/microsoft.insights/actionGroups/ag-manual-001"],
                                   "actionType": "AddActionGroups"
                                 }
                               ]
